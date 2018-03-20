@@ -1,0 +1,48 @@
+1. Download recent Python and Install it
+https://www.python.org/downloads/
+
+2. Add Python to Paths
+Solution for Windows 10.
+a. Click on Search Windows
+b. Enter "Path"
+c. Open Edit System Environment Variables
+d. Select System Variables Path and click edit
+e. Click New and add <Path_to_Python>\Python<number>
+f. Click New and add <Path_to_Python>\Python<number>\Scripts
+
+3.1 Install Selenium by Pip 
+3.1.a. Click on Search Windows
+3.1.b. Enter "cmd"
+3.1.c.1 Enter "pip install -u selenium" (if step 2 was done properly - selenium should be installed)
+3.1.c.2 Enter "cd <Path_to_Python>\Python<number>\Scripts" and Enter "pip install -u selenium"
+OR
+3.2 Download recent Selenium for Python and install it
+https://pypi.python.org/pypi/selenium
+
+4.1 Download recent Chrome Webdriver 
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+4.2 (optional case) other webdrivers can be used to, but these test are created for Chrome Webdriver 
+
+5.1. Download recent PyCharm Community Ed And Install it
+https://www.jetbrains.com/pycharm/download/
+OR
+5.2. Download recent Visual Studio Code And Install it
+https://code.visualstudio.com/
+
+6.1. Create folder "Mobiquity" on Drive D: and copy all files of this package there
+6.2. If Drive D: is not allowed/exist place package anywhere it possible but some additional actions would be required in step 8
+
+7. Run IDE (Pycharm or VSC) and open package
+
+8.1. Change string 7 in each autotest should be change from "D:\Mobiquity\chromedriver.exe" to "<Your Folder>\chromedriver.exe"
+OR
+8.2. Project - New - Directory(name it "drivers)". Place chromedriver.exe there. 
+Change string 7 in each autotest should be change from "D:\Mobiquity\chromedriver.exe" to "..\drivers\chromedriver.exe"
+
+9. Run Each Test in IDE. Tests are independed to each other and can be run in any order.
+
+10.a Click on Search Windows
+10.b Enter "cmd"
+10.c enter "d:", enter "cd Mobiquity\PY_cafe", enter Autotest_it.bat (may require windows permission)
+
+Open file Report.txt in Mobiquity\PY_cafe folder. It contain Date/time of test run and Testname, and if it was successfull it is marked too
